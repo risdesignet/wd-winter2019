@@ -37,12 +37,12 @@ How can we design not only for what the web is today, but for what the web could
 * Join GitHub (You are here)
 * Review Git Version control / download [GitHub Mac client](https://desktop.github.com/) and clone the class demos repository
 * Download [Sublime Text](https://www.sublimetext.com/3) or [Atom](https://atom.io/)
-* Join the [Slack channel](https://join.slack.com/t/wd-winter18/signup)
+* Join the [Slack channel](https://join.slack.com/t/risd-web-ws-2019/shared_invite/enQtNTE3OTYyMjkwMDIxLThkOWRkM2E2NmFmOTU3N2MzODIzZTIxY2RjMDgwY2MzYjgzZWU5MGJlNjhjOTc5YjJhOTBkMTFkOTY3Yjg4YWE)
 * Free Lynda.com account through RISD or Brown at [Lynda](https://www.lynda.com/)
 * Test in Google Chrome, Safari, and/or Firefox — assignments will be evaluated in Google Chrome
 
 ## Lectures
-All lectures are posted on [Google Drive](https://drive.google.com/open?id=19l_cfMKDG498TPKCjukv4VPz-fwGlF6X)
+All lectures are posted on [Google Drive](https://drive.google.com/open?id=1SVGWB1XqdwU2XeqQ_BCESHxIwk2UjiJL)
 
 ## Exercises and Projects
 All assignments are posted on the [Home](https://github.com/risdesignet/wd-winter19/wiki) page on the Wiki. Exercises are in-class / take-home assignments for practicing or extending material covered in class. Projects are larger assignments to shape your own content. There will be 4 projects over the course of the semester.
