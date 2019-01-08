@@ -3,7 +3,7 @@
 * Wintersession: WEB DESIGN | RISD GRAPH-3271
 * 3 credits
 * Section 1: Bobby Joe Smith III (bsmith07@risd.edu) | Room 212
-* Section 2: Robert McConnell (rmcconne@risd.​edu) | Room 409
+* Section 2: Robert McConnell (rmcconne@risd.edu) | Room 206
 
 How can we design not only for what the web is today, but for what the web could be? Designing for the internet requires an understanding of the unique interactive experience offered by the web medium. This introductory course will cover the technical basics of HTML, CSS, and Javascript, as well as the latest practices in web design and development. We’ll learn the tools and techniques involved in creating a website from scratch, while exploring the application of graphic design principles to web-based technology. Class time will consist of discussions of relevant readings, technical lectures, design critiques, and hands-on coding workshops.
 
