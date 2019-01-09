@@ -11,7 +11,7 @@ How can we design not only for what the web is today, but for what the web could
 * 1:10pm – 6:10pm
 * First class Monday: 1/7/2018
 * Mon & Tues: 1/7–2/5
-* No class 1/15 — MLK Day
+* No class 1/21 — MLK Day
 * Wed: 1/9
 * Wed: 1/23
 * Wed: 2/6
