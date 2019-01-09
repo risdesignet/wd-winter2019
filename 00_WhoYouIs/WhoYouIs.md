@@ -17,7 +17,7 @@ Not sure what a Hogwart is? You can take the test [here](https://www.pottermore.
 
 ## 9. What are your goals for this course? What do you want to have learned or completed by the end of it?
 
-## 10. Do you have any fears or apprehensions about learning web design and web development?
+## 10. Do you have any fears or apprehensions about learning web design/development?
 
 ## 11. What would you like to see more of on the internet?
 
