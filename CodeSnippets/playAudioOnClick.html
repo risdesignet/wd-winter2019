@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play Audio On Click</title>
+</head>
+<body>
+  <audio id="myAudio">
+    <!-- replace horse.ogg/horse.mp3 with url to your sound file -->
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <p>Click the buttons to play or pause the audio.</p>
+
+  <!-- playAudio() is the JavaScript function that tells the browser to play your audio file. The onclick attribute tells the browser to run the playAudio() function when a user clicks the html element with the onclick attribute -->
+  <button onclick="playAudio()" type="button">Play Audio</button>
+  <!-- similar to playAudio() function, except it pauses the audio -->
+  <button onclick="pauseAudio()" type="button">Pause Audio</button>
+  <!-- onclick attribute works on other elements too, not just buttons. However, if it's a text element you wont see an arrow cursor. You can determine what type of arrow cursor shows up with the css cursor declaration -->
+  <h1 onclick="playAudio()">Click me to play audio!</h1>
+
+  <!-- The script tag lets your browser know all of the code inside of it is JavaScript and not HTML. If you're going to put the script tag in your html, it should be the very last element inside the html body tag, allowing your whole page to load before it tries to run any JavaScript functions. -->
+  <script>
+    // "myAudio" should be the ID name you assigned to your html audio element
+    var audio = document.getElementById("myAudio");
+
+    function playAudio() {
+      audio.play();
+    }
+
+    function pauseAudio() {
+      audio.pause();
+    }
+  </script>
+</body>
+</html>
