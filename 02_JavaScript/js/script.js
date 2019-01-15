@@ -56,6 +56,23 @@ window.onload = function() {
     // put the text in the header element
     node.appendChild(nodeText);
     body[0].appendChild(node);
+    // Add event listener to addHeader
+    node.addEventListener("click", addParagraph);
+  }
+
+  // find out if mouse is clicked
+  // find out if mouse is clicked on header
+  // if mouse is clicked then add a new html element to page
+
+  function addParagraph() {
+    // create a paragraph element
+    var para = document.createElement("p");
+    // create text for paragraph element
+    var paraText = document.createTextNode("Rabbits are small mammals in the family Leporidae of the order Lagomorpha (along with the hare and the pika). Oryctolagus cuniculus includes the European rabbit species and its descendants, the world's 305 breeds[1] of domestic rabbit. Sylvilagus includes thirteen wild rabbit species, among them the seven types of cottontail. The European rabbit, which has been introduced on every continent except Antarctica, is familiar throughout the world as a wild prey animal and as a domesticated form of livestock and pet. With its widespread effect on ecologies and cultures, the rabbit (or bunny) is, in many areas of the world, a part of daily life—as food, clothing, a companion, and as a source of artistic inspiration.");
+    // append text node to html node
+    para.appendChild(paraText);
+    // append para node to html body
+    body[0].appendChild(para);
   }
 
   // Track the movement of the mouse on the document object and
