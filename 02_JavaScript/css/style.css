@@ -1,3 +1,9 @@
 body {
   background-color: rgb(255, 250, 100);
+  /* Height needs to be larger than browser height to register a scroll event */
+  height: 5000px;
+}
+
+h1 {
+  position:fixed;
 }
