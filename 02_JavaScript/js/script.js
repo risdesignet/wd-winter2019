@@ -18,9 +18,11 @@ function getMouseXY(e) {
 
   // get body element
   var body = document.getElementsByTagName("body");
-  //get change background style of body element
+  // change background style of body element
   // body[0].style.backgroundColor = "rgb(2, 2, 2)";
   // body[0].style.backgroundColor = "rgb(" + tempX + ", " + tempY + ", 50)";
+  body[0].style.backgroundColor = `rgb(${tempX}, ${tempY}, 50)`;
+
 
   console.log("X coordinate: " + tempX);
   console.log("Y coordinate: " + tempY);
