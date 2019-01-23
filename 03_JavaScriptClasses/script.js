@@ -33,6 +33,13 @@ window.onload = function(e){
     seenBirdbox: false,
     fullName: function() {
       console.log(this.firstName + " " + this.lastName);
+    },
+    printContents: function(key) {
+      var pNode = document.createElement("p");
+      k = this.key;
+      var pText = document.createTextNode(`${k}: ${k}`);
+      pNode.appendChild(pText);
+      body.appendChild(pNode);
     }
   }
 
@@ -43,11 +50,27 @@ window.onload = function(e){
   // get body node from html
   // create child node
   function addInfo () {
+    // var pNode = document.createElement("p");
+    // var pText = document.createTextNode(`First Name: ${bobbyjoe.firstName}`);
+    // pNode.appendChild(pText);
+    // body.appendChild(pNode);
+    for (var key in bobbyjoe) {
+      var pNode = document.createElement("p");
+      console.log(bobbyjoe[key]);
+      var pText = document.createTextNode(`${key}: ${bobbyjoe[key]}`);
+    }
+  }
+
+  addInfo();
+
+  function appendInfo(object, value) {
     var pNode = document.createElement("p");
-    var pText = document.createTextNode(`First Name: ${bobbyjoe.firstName}`);
+    key = Object.keys(object).find(key => object[key] === value);
+    var pText = document.createTextNode(`${key}: ${value}`);
     pNode.appendChild(pText);
     body.appendChild(pNode);
   }
 
-  addInfo();
+  appendInfo(bobbyjoe, bobbyjoe.firstName);
+  bobbyjoe.printContents(lastName);
 }
