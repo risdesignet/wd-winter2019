@@ -34,16 +34,9 @@ $( document ).ready(function() {
 
   }
 
-  console.log(bobbyjoe.firstname);
-  bobbyjoe.fullName();
-
-  // append data to DOM
-  // get body node from html
-  // create child node
   function addInfo () {
     $("section").append(`<p>${bobbyjoe.firstName}</p>`);
   }
-
 
   function scale(num, in_min, in_max, out_min, out_max) {
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
@@ -54,7 +47,6 @@ $( document ).ready(function() {
     // toggle typeface on double click
     // change typecolor of typeface based on mouse position
     $("p").dblclick(function() {
-      //$(this).css("font-family","helvetica");
       $(this).toggleClass("helvetica");
     });
     // get mouse coordinates
@@ -69,6 +61,7 @@ $( document ).ready(function() {
       console.log(modY);
       $("p").css("color", `rgb(${modX}, ${modY}, ${Math.floor(modX + modY/2)})`);
     });
+    // when user presses enter display age in alert
     $(document).keypress(function( event ) {
       if(event.which == 13) {
         alert("Bobby Joe is " + bobbyjoe.age + " years old.");
