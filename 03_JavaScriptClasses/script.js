@@ -69,6 +69,11 @@ $( document ).ready(function() {
       console.log(modY);
       $("p").css("color", `rgb(${modX}, ${modY}, ${Math.floor(modX + modY/2)})`);
     });
+    $(document).keypress(function( event ) {
+      if(event.which == 13) {
+        alert("Bobby Joe is " + bobbyjoe.age + " years old.");
+      }
+    })
   }
   addInfo();
   doThings();
