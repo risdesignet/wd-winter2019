@@ -44,12 +44,30 @@ $( document ).ready(function() {
     $("section").append(`<p>${bobbyjoe.firstName}</p>`);
   }
 
+
+  function scale(num, in_min, in_max, out_min, out_max) {
+    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+  }
+
   function doThings() {
     // onclick of paragraph tag add info to alert tag
-    // change typeface double click
+    // toggle typeface on double click
     // change typecolor of typeface based on mouse position
     $("p").dblclick(function() {
-      $(this).css("font-family","helvetica");
+      //$(this).css("font-family","helvetica");
+      $(this).toggleClass("helvetica");
+    });
+    // get mouse coordinates
+    // use mouse coordinates to change rgb color
+    $( document ).on( "mousemove", function( event ) {
+      var mouseX = event.pageX;
+      var mouseY = event.pageY;
+      var modX;
+      var modY;
+      modX = Math.floor(scale(mouseX, 0, $(window).width(), 0, 255));
+      modY = Math.floor(scale(mouseY, 0, $(window).height(), 0, 255));
+      console.log(modY);
+      $("p").css("color", `rgb(${modX}, ${modY}, ${Math.floor(modX + modY/2)})`);
     });
   }
   addInfo();

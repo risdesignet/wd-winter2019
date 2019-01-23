@@ -1,3 +1,8 @@
 p {
   font-size: 64px;
+  font-family: georgia;
+}
+
+.helvetica {
+  font-family: helvetica;
 }
