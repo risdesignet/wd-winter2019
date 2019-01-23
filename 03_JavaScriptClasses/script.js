@@ -1,8 +1,5 @@
-window.onload = function(e){
+$( document ).ready(function() {
   var body =  document.querySelector("body");
-
-
-
   // Objectify Myself
   // firstname
   // lastname
@@ -33,14 +30,8 @@ window.onload = function(e){
     seenBirdbox: false,
     fullName: function() {
       console.log(this.firstName + " " + this.lastName);
-    },
-    printContents: function(key) {
-      var pNode = document.createElement("p");
-      k = this.key;
-      var pText = document.createTextNode(`${k}: ${k}`);
-      pNode.appendChild(pText);
-      body.appendChild(pNode);
     }
+
   }
 
   console.log(bobbyjoe.firstname);
@@ -50,27 +41,17 @@ window.onload = function(e){
   // get body node from html
   // create child node
   function addInfo () {
-    // var pNode = document.createElement("p");
-    // var pText = document.createTextNode(`First Name: ${bobbyjoe.firstName}`);
-    // pNode.appendChild(pText);
-    // body.appendChild(pNode);
-    for (var key in bobbyjoe) {
-      var pNode = document.createElement("p");
-      console.log(bobbyjoe[key]);
-      var pText = document.createTextNode(`${key}: ${bobbyjoe[key]}`);
-    }
+    $("section").append(`<p>${bobbyjoe.firstName}</p>`);
   }
 
+  function doThings() {
+    // onclick of paragraph tag add info to alert tag
+    // change typeface double click
+    // change typecolor of typeface based on mouse position
+    $("p").dblclick(function() {
+      $(this).css("font-family","helvetica");
+    });
+  }
   addInfo();
-
-  function appendInfo(object, value) {
-    var pNode = document.createElement("p");
-    key = Object.keys(object).find(key => object[key] === value);
-    var pText = document.createTextNode(`${key}: ${value}`);
-    pNode.appendChild(pText);
-    body.appendChild(pNode);
-  }
-
-  appendInfo(bobbyjoe, bobbyjoe.firstName);
-  bobbyjoe.printContents(lastName);
-}
+  doThings();
+});
