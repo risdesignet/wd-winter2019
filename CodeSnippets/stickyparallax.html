@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sticky Parallax</title>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand|Yatra+One" rel="stylesheet">
+    <style>
+      /* css reset */
+      html, body, div,
+      h1, h2, h3, h4, h5, h6, p,
+      a, article, canvas, footer, header, section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+    </style>
+    <style type="text/css">
+      html {
+          background-color: snow;
+      }
+      body {
+        font-family: 'Yatra One', cursive;
+        font-size: 32px;
+        line-height: 1.4em;
+        width: 800px;
+        margin: 0 auto;
+        padding-bottom: 300px;
+      }
+      header, section {
+        padding: 20px;
+        /* tell the headers and the sections to be sticky */
+        position: sticky;
+        /* make sure it works in safari browsers as well */
+        position: -webkit-sitcky;
+        /* tell it where to stick */
+        top: 0;
+      }
+      h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 3em;
+        line-height: 1em;
+      }
+      h2 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.6em;
+        line-height: 1.2em;
+      }
+      img {
+        width: 50%;
+        text-align: center;
+      }
+      header {
+        background-color: honeydew;
+      }
+      .about {
+        background-color: mintcream;
+      }
+      .sect-1 {
+        background-color: azure;
+      }
+      .sect-2 {
+        background-color: aliceblue;
+      }
+      .sect-3 {
+        background-color: ghostwhite;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>In Bob We Trust!</h1>
+    </header>
+    <section class="about">
+      <h2>About</h2>
+      <img src="https://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/546901-bobrossinc.png?itok=hWinoXoQ&resize=1100x1100">
+      <p>This is your world. Nothing wrong with washing your brush. Any little thing can be your friend if you let it be.</p>
+    </section>
+    <section class="sect-1">
+      <h2>Section 1</h2>
+      <img src="http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201805/490924372.jpg">
+      <p>The first step to doing anything is to believe you can do it. See it finished in your mind before you ever start. Happy painting, God bless. This is probably the greatest thing that's ever happened in my life. Work on one thing at a time. Don't get carried away - we have plenty of time. It's a super day, so why not make a beautiful sky?</p>
+    </section>
+    <section class="sect-2">
+      <h2>Section 2</h2>
+      <img src="https://img.huffingtonpost.com/asset/5750a5df130000d6053836ff.png?ops=scalefit_720_noupscale">
+      <p>It's beautiful - and we haven't even done anything to it yet. Everything is happy if you choose to make it that way. Let your imagination be your guide. I thought today we would make a happy little stream that's just running through the woods here.</p>
+    </section>
+    <section class="sect-3">
+      <h2>Section 3</h2>
+      <img src="https://media.boingboing.net/wp-content/uploads/2015/10/lovable.jpg">
+      <p>You don't want to kill all your dark areas they are very important. A tree needs to be your friend if you're going to paint him. Do an almighty painting with us. Follow the lay of the land. It's most important. Let's give him a friend too. Everybody needs a friend.</p>
+    </section>
+  </body>
+</html>
