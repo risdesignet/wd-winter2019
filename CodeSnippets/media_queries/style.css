@@ -1,0 +1,31 @@
+html {
+	font-size: 20px;
+}
+
+body {
+	padding: 1rem;
+}
+
+img {
+	width: 100%;
+	display: block;
+	margin: 0 0 1rem 0;
+}
+
+@media screen and (min-width: 700px) {
+	.container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 1rem;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	html {
+		font-size: 30px;
+	}
+	.container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
