@@ -1,0 +1,17 @@
+html, body {
+  font-family: 'Bitter', serif;
+  background-color: green;
+}
+body {
+  box-sizing: border-box;
+  max-width: 1080px;
+  padding: 20px 40px;
+}
+
+h1 {
+  color: white;
+  font-size: 12em;
+}
+img {
+  margin-top: 40px;
+}

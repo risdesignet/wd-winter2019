@@ -1,0 +1,84 @@
+html, body {
+  font-family: 'Bitter', serif;
+  background-color: yellow;
+}
+body {
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+.page-wrapper {
+  // Once the window width gets beyond 1000px, stop growing the .page-wrapper and position it in the middle of the window horizontally
+  box-sizing: border-box;
+  max-width: 1000px;
+  min-width: 375px;
+  width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 12em;
+  color: #161616;
+}
+
+a {
+  font-size: 3em;
+  color: #161616;
+  line-height: 1.2em;
+  text-decoration: none;
+  transition: text-shadow 0.5s;
+}
+
+a:visited {
+  color: #f407f7;
+}
+
+a:hover {
+  text-shadow: 2px 2px 6px #f407f7;
+}
+
+span {
+  font-size: 3em;
+  color: #161616;
+}
+
+img {
+  width: 250px;
+  position: absolute;
+}
+
+img:hover {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+img:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 9em;
+  }
+  img {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    padding: 1em;
+  }
+  h1 {
+    font-size: 6em;
+  }
+  a {
+    font-size: 2.2em;
+  }
+}
